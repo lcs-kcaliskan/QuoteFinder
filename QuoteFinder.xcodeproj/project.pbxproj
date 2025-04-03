@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E412F5AC2D9EBA7B00384DB6 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E412F5A92D9EBA7B00384DB6 /* QuoteView.swift */; };
+		E412F5AD2D9EBA7B00384DB6 /* QuoteFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E412F5AA2D9EBA7B00384DB6 /* QuoteFinderApp.swift */; };
+		E412F5AE2D9EBA7B00384DB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E412F5A62D9EBA7B00384DB6 /* Preview Assets.xcassets */; };
+		E412F5AF2D9EBA7B00384DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E412F5A82D9EBA7B00384DB6 /* Assets.xcassets */; };
+		E412F5B82D9EBB0200384DB6 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E412F5B72D9EBB0200384DB6 /* QuoteViewModel.swift */; };
+		E412F5BA2D9EBB0F00384DB6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E412F5B92D9EBB0F00384DB6 /* Quote.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E412F5952D9EBA6700384DB6 /* QuoteFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E412F5A62D9EBA7B00384DB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E412F5A82D9EBA7B00384DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E412F5A92D9EBA7B00384DB6 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		E412F5AA2D9EBA7B00384DB6 /* QuoteFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteFinderApp.swift; sourceTree = "<group>"; };
+		E412F5B72D9EBB0200384DB6 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		E412F5B92D9EBB0F00384DB6 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E412F5972D9EBA6700384DB6 /* QuoteFinder */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = QuoteFinder;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E412F5922D9EBA6700384DB6 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		E412F58C2D9EBA6700384DB6 = {
 			isa = PBXGroup;
 			children = (
-				E412F5972D9EBA6700384DB6 /* QuoteFinder */,
+				E412F5AB2D9EBA7B00384DB6 /* QuoteFinder */,
 				E412F5962D9EBA6700384DB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,51 @@
 				E412F5952D9EBA6700384DB6 /* QuoteFinder.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E412F5A72D9EBA7B00384DB6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E412F5A62D9EBA7B00384DB6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E412F5AB2D9EBA7B00384DB6 /* QuoteFinder */ = {
+			isa = PBXGroup;
+			children = (
+				E412F5B12D9EBA9700384DB6 /* Models */,
+				E412F5B32D9EBAB900384DB6 /* ViewModels */,
+				E412F5B02D9EBA9200384DB6 /* Views */,
+				E412F5A72D9EBA7B00384DB6 /* Preview Content */,
+				E412F5A82D9EBA7B00384DB6 /* Assets.xcassets */,
+				E412F5AA2D9EBA7B00384DB6 /* QuoteFinderApp.swift */,
+			);
+			path = QuoteFinder;
+			sourceTree = "<group>";
+		};
+		E412F5B02D9EBA9200384DB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E412F5A92D9EBA7B00384DB6 /* QuoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E412F5B12D9EBA9700384DB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E412F5B92D9EBB0F00384DB6 /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E412F5B32D9EBAB900384DB6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E412F5B72D9EBB0200384DB6 /* QuoteViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +111,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				E412F5972D9EBA6700384DB6 /* QuoteFinder */,
 			);
 			name = QuoteFinder;
 			packageProductDependencies = (
@@ -109,6 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E412F5AE2D9EBA7B00384DB6 /* Preview Assets.xcassets in Resources */,
+				E412F5AF2D9EBA7B00384DB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E412F5AC2D9EBA7B00384DB6 /* QuoteView.swift in Sources */,
+				E412F5B82D9EBB0200384DB6 /* QuoteViewModel.swift in Sources */,
+				E412F5BA2D9EBB0F00384DB6 /* Quote.swift in Sources */,
+				E412F5AD2D9EBA7B00384DB6 /* QuoteFinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
