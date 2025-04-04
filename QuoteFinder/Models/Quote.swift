@@ -9,7 +9,7 @@
 import Foundation
 
 struct Quote: Identifiable, Codable {
-    var id: UUID { UUID() }  
+    let id = UUID()
     let quoteText: String
     let quoteAuthor: String
 }

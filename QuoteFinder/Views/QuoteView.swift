@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuoteView: View {
-    @StateObject var viewModel = QuoteViewModel()
+    @State var viewModel = QuoteViewModel()
     @State var punchlineOpacity = 0.0
     @State var buttonOpacity = 0.0
 
@@ -41,11 +41,6 @@ struct QuoteView: View {
                 .opacity(buttonOpacity)
             } else {
                 ProgressView()
-            }
-        }
-        .onAppear {
-            Task {
-                await viewModel.fetchQuote()
             }
         }
     }
